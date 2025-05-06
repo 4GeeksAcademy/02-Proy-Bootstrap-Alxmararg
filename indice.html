@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>02 Proyecto Instagram Photo Feed con Bootstrap</title>
+	</head>
+	<body>
+		<div>
+			<nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <div class="navbar-brand d-flex align-items-center gap-1" href="#">
+                        <i class="bi bi-instagram"></i>
+                        <span>Instagram</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item active">
+                                <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Create a new post
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-gear-fill"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacity and Data</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+		</div>
+        <div class="container my-4">
+            <div class="d-flex justify-content-center m-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#coli1" type="button" role="tab"><i class="bi bi-square-fill"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="single-tab" data-bs-toggle="tab" data-bs-target="#colfor3" type="button" role="tab"><i class="bi bi-grid-3x3"></i></button>
+                        </li>
+                      </ul>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="tab-content w-100 d-flex justify-content-center">
+                        <div class="tab-pane fade show active" id="coli1" role="tabpanel">
+                    <div class="card flex-md-column" style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">El Gobierno adjudico 46 contratos a industrias militares israelíes </h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/23/cartela-sobre-la-polemica-del-ministerio-del-interior-de-grande-marlaska-y-la-compra-de-balas-israelies.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>10M Likes</strong>
+                            <p class="card-text">
+                            El Gobierno ha adjudicado 46 contratos a industrias militares israelíes por valor de 1.044 millones de euros desde el 7 de octubre de 2023, fecha del ataque de Hamás a Israel, de los que hasta la última consulta en la Plataforma de Contratación del Estado, realizada el 24 de abril de 2025, diez aún no han sido formalizados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">El Madrid planta a la RFEF y amenaza con no jugar el partido</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/mbappe-y-de-burgos-bengoechea.jpeg" alt="">
+                        <div class="card-body">
+                            <strong>12M Likes</strong>
+                            <p class="card-text">
+                                Se recrudece la guerra que mantiene el Real Madrid con el colectivo arbitral antes de la final de Copa del Rey ante el Barça: después de las declaraciones de los árbitros del partido, Ricardo de Burgos Bengoechea y Pablo González Fuertes, sobre los vídeos de Real Madrid TV sobre los colegiados, la entidad madridista ha mostrado su indignación a la RFEF, que esperaba que reaccionase con un cambio en la designación arbitral, algo que no ha ocurrido. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">Restablecida la circulación tras una incidencia que paralizó cuatro trenes</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2023/03/28/ave.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>5M Likes</strong>
+                            <p class="card-text">
+                                La circulación de la línea de alta velocidad Madrid-Zaragoza-Barcelona ha quedado restablecida en la tarde de este viernes, una hora después de que una incidencia detectada a la altura de Alhama de Aragón mantuviera paralizados los cuatro trenes que en esos momentos circulaban por ella.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">Lidl apuesta por el talento senior: ofertas de empleo fijo para mayores de 50</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2024/07/16/lidl-supermercado-imagen-recurso.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>2M Likes</strong>
+                            <p class="card-text">
+                                La conocida cadena de supermercados Lidl ha lanzado más de 160 nuevas ofertas de empleo para buscar a personas interesadas en trabajar en los supermercados y oficinas que tiene distribuidas por todo el país, para las que busca contratar a todo tipo de perfiles, desde estudiantes que tratan de encontrar su primera oportunidad laboral, hasta su apuesta por el talento senior, al ofrecer empleo fijo a mayores de 50 años y con amplia experiencia laboral.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">Pedro Pascal arremete contra J.K. Rowling tras el juició británico</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/pascal-rowling.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>6M Likes</strong>
+                            <p class="card-text">
+                                A la reciente premiere de Thunderbolts*, celebrada en Londres, Pedro Pascal acudió en calidad de protagonista de otro próximo film de Marvel Studios, Los Cuatro Fantásticos: Primeros pasos. Pero eso no dio que hablar tanto como la camiseta que vestía, con el rótulo impreso “protect the dolls”. Este mensaje se enmarca en un rechazo organizado a las políticas tránsfobas de Donald Trump en su nueva legislatura, aludiendo con “dolls” a las mujeres trans como referencia a la cultura ballroom.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">La vida del primer hombre al que Elon Musk implantó un chip en el cerebro</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/hombre-chip-elon-musk.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>4M Likes</strong>
+                            <p class="card-text">
+                                Podría parecer un capítulo de la nueva temporada de 'Black Mirror', pero es una realidad. El CEO de Tesla, Elon Musk, hace aproximadamente un año lanzó un proyecto que se basaba en la implantación de chips a humanos que tuvieran algún tipo de discapacidad. Un joven de 30 años se puso en las manos de la compañía del multimillonario Neuralink para convertirse en el primer humano en llevar este tipo de dispositivos. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">Qué es la chía, el superalimento</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/semillas-de-chia.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>2607 Likes</strong>
+                            <p class="card-text">
+                                De un tiempo a esta parte es posible que hayas observado que, tanto en repostería como en recetas de desayunos o en batidos, cada vez haya más presencia de unas pequeñas semillas que, a nivel nutricional, están muy bien valoradas: la chía. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">Ruta norte de España en coche de Galicia al País Vasco</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/23/coche-en-carretera.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>67859 Likes</strong>
+                            <p class="card-text">
+                                España cuenta con una amplia red de carreteras que permite que los viajes en coche sean una excelente y placentera opción para los turistas. Así, traemos una ruta en la que tú eliges los horarios, trayectos y el tiempo que quieres dedicarle a cada destino. Podrás visitar cuatro regiones entre Ourense y Vitoria-Gasteiz, rodeado de magníficos espacios naturales y monumentos declarados Patrimonio Cultural. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card my-3"style="width: 45rem;">
+                        <div class="card-head">
+                            <h5 class="card-title">Google VS ChatGPT: su IA puede analizar vídeos y sabe donde grabaron</h5><p class="position-absolute top-0 end-0"> 25/04</p>
+                        </div>
+                        <img src="https://imagenes.20minutos.es/files/image_990_556/files/fp/uploads/imagenes/2024/02/27/openai-vs-google.r_d.834-252-10114.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <strong>11M Likes</strong>
+                            <p class="card-text">
+                                ChatGPT reúne a más de 120 millones de usuarios al día, marcando la tendencia en cuanto a los chatbots de IA se refiere gracias a que incorpora funciones que otras inteligencias artificiales no poseen todavía. Una de ellas es su modo avanzado de voz, que permite hablar de una forma muy natural con él o, más recientemente, su capacidad para crear imágenes realistas y de estilo Ghibli, algo que se ha transformado en un fenómeno viral.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="colfor3" role="tabpanel">
+                    <div class="row m-1">
+                        <div class="col-4"><img class="img-thumbnail border border-0 border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/23/cartela-sobre-la-polemica-del-ministerio-del-interior-de-grande-marlaska-y-la-compra-de-balas-israelies.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/mbappe-y-de-burgos-bengoechea.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2023/03/28/ave.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2024/07/16/lidl-supermercado-imagen-recurso.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/pascal-rowling.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/hombre-chip-elon-musk.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/25/semillas-de-chia.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                        <div class="col-4"><img class="img-thumbnail border border-0" src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2025/04/23/coche-en-carretera.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                        <div class="col-4"><img class="img-thumbnail border border-0"src="https://imagenes.20minutos.es/files/image_990_556/files/fp/uploads/imagenes/2024/02/27/openai-vs-google.r_d.834-252-10114.jpeg" class="rounded mx-auto d-block" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Caption:</p>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Add the caption of your post here</label>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark border-0"><i class="bi bi-camera-fill"></i></button><button type="button" class="btn btn-outline-dark border-0"><i class="bi bi-geo-alt-fill"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publid</button>
+                </div>
+                </div>
+            </div>
+        </div>
+          
+	</body>
+</html>
